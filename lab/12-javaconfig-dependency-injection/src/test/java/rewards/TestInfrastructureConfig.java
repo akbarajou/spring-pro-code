@@ -1,13 +1,15 @@
 package rewards;
 
+import config.RewardsConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 
 import javax.sql.DataSource;
 
 /**
- * TODO-06: Study this configuration class used for testing
+ * TODO-06: Study this configuration class used for testing [COMPLETED]
  * - It contains a @Bean method that returns DataSource.
  * - It also creates and populates in-memory HSQL database tables
  *   using two SQL scripts.
@@ -52,6 +54,7 @@ import javax.sql.DataSource;
  * - If your test fails - did you miss the import in TO DO 7 above?
  *
  */
+@Import(RewardsConfig.class)
 @Configuration
 public class TestInfrastructureConfig {
 
