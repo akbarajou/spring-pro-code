@@ -7,8 +7,8 @@ public class TestConstants {
 	// - Writing pointcut expressions
 	// - Using various types of advices
 	//
-	// TODO-01: Enable checking of console output in our Tests.
+	// TODO-01: Enable checking of console output in our Tests. [COMPLETED]
 	// - Change the value below to true
 	
-	public static final boolean CHECK_CONSOLE_OUTPUT = false;
+	public static final boolean CHECK_CONSOLE_OUTPUT = true;
 }
